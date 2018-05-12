@@ -1,4 +1,4 @@
-# Common Interview problems
+# General Problem Solving
 
 It has Datastructure and Algorithms practice problems that generally product based companies ask during inital rounds.
 
