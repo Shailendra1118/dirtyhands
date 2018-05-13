@@ -20,7 +20,7 @@ public class FinMinInRotatedArray {
 		int low = 0, hi = arr.length - 1, mid = 0;
 
 		while (low < hi) {
-			mid = low + (hi - low) / 2;
+			mid = low + (hi - low) / 2; // (low+hi)>>>1
 			if (arr[low] < arr[mid] && arr[hi] < arr[mid]) {
 				low = mid + 1;
 			} else {
