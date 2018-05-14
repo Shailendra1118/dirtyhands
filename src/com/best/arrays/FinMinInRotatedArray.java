@@ -16,9 +16,10 @@ public class FinMinInRotatedArray {
 
 	public static void main(String[] args) {
 		// Binary Search approach
-		int arr[] = { 8, 2, 3, 4, 5, 6, 7 };
+		int arr[] = { 4, 5, 6, 7, 8, 9, 1, 2, 3 };
 		int low = 0, hi = arr.length - 1, mid = 0;
 
+		// Iterative binary search
 		while (low < hi) {
 			mid = low + (hi - low) / 2; // (low+hi)>>>1
 			if (arr[low] < arr[mid] && arr[hi] < arr[mid]) {
