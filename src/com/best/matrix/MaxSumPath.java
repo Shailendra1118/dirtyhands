@@ -26,6 +26,7 @@ public class MaxSumPath {
 		System.out.println("Col " + n);
 
 		int temp[][] = new int[m][n];
+		// start from bottom left
 		temp[m - 1][0] = grid[m - 1][0];
 
 		// first column
