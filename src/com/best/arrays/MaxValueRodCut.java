@@ -28,9 +28,9 @@ public class MaxValueRodCut {
 		System.out.println("Res: " + val);
 
 		curRodBT(arr, n);
-		dp = new int[n + 1];
-		int res = cutRodRecTP(arr, n);
-		System.out.println("res:" + res);
+		// dp = new int[n + 1];
+		// int res = cutRodRecTP(arr, n);
+		// System.out.println("res:" + res);
 
 	}
 
@@ -38,7 +38,7 @@ public class MaxValueRodCut {
 	 * @param arr
 	 */
 	private static void curRodBT(int[] arr, int n) {
-		// DP approach Bottom Top
+		// DP approach Bottom Top, I like it ;)
 		int dp[] = new int[n + 1];
 		dp[0] = 0;
 

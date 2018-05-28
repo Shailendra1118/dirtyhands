@@ -48,12 +48,12 @@ public class TestGenerics {
 
 	private static List<? super Parent> getList() {
 
-		List<? super Parent> list = new ArrayList<>();
-		list.add(new Parent("p1")); // can not add parent object
+		List<? super Parent> list = new ArrayList<Parent>();
+		list.add(new Parent("p1")); // can add parent object and child but list can be assigned of only Parent
 		list.add(new Child("c1"));
 		list.add(new Child("c2"));
 
-		// processId(list);
+		processId(list);
 		return list;
 	}
 
@@ -61,7 +61,10 @@ public class TestGenerics {
 	 * @param list
 	 */
 	private static void processId(List<? super Parent> list) {
-
+		for (Object p : list) { // Object only can read no Parent !!
+			Parent po = (Parent) p;
+			System.out.println((po.val));
+		}
 	}
 
 	private static List<? extends Parent> getListAgain() {
